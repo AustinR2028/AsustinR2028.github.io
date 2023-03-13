@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta charset="utf-8">
+    <title>Planets!</title>
+    <link href="Icon.png" rel="icon" />
+    <script src="js/pixi.min.js"></script>
+	<script>
+	let app;
+	window.onload = function() {
+		app = new PIXI.Application(
+			{
+				width: 800,
+				height: 600,
+				backgroundColor:0xAAAAAA
+			}
+		);
+		document.body.appendChild(app.view);
+		// player object \\
+		player = new PIXI.Sprite.from("imgs/player.png");
+		player.anchor.set(0.5);
+		player.x = app.view.width/2;
+		player.y = app.view.height/2;
+	}
+	</script>
+</head>
+<body>
+    
+</body>
+</html> 
