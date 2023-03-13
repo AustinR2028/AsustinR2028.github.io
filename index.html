@@ -5,7 +5,6 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 	<meta charset="utf-8">
     <title>Planets!</title>
-    <link href="Icon.png" rel="icon" />
     <script src="js/pixi.min.js"></script>
 	<script>
 	let app;
@@ -23,6 +22,8 @@
 		player.anchor.set(0.5);
 		player.x = app.view.width/2;
 		player.y = app.view.height/2;
+
+		app.stage.addChild(player);
 	}
 	</script>
 </head>
