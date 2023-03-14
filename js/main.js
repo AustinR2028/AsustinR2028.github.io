@@ -1,4 +1,3 @@
-//up
 let app;
 let player;
 window.onload = function() {
@@ -17,4 +16,13 @@ window.onload = function() {
 	player.y = app.view.height/2;
 	
 	app.stage.addChild(player);
+	
+	window.addEventListener("keydown", keysDown);
+	window.addEventListener("keyup" keysUp);
+}
+function keysDown(keys) {
+	console.log(keys.keycode);
+}
+function keysUp(keys) {
+	console.log(keys.keycode);
 }
