@@ -13,8 +13,8 @@ window.onload = function() {
 	
 	player = PIXI.Sprite.from("imgs/player.png");
 	player.anchor.set(0.5);
-	player.width = app.view.width/2;
-	player.height = app.view.height/2;
+	player.x = app.view.width/2;
+	player.y = app.view.height/2;
 	
 	app.stage.addChild(player);
 }
