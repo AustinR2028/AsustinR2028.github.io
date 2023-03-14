@@ -1,3 +1,4 @@
+//up
 let app;
 let player;
 window.onload = function() {
